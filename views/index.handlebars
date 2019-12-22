@@ -1,1 +1,14 @@
-<!-- Placeholder ==>
+<div class="burgers_list">
+    <h2>To Be Devoured</h2>
+    {{#each noDevoured}}
+        <div class="no_devoured"><div>{{this.id}}.</strong> {{this.name}}</div><button data-id={{this.id}} class="devour">Devour it</button>
+        </div><hr>
+    {{/each}}
+</div>
+
+<div class="burgers_list">
+    <h2>Devoured</h2>
+    {{#each devoured}}
+        <div class="devoured"><strong>{{this.id}}.</strong> {{this.name}}</div><hr>
+    {{/each}}
+</div>
